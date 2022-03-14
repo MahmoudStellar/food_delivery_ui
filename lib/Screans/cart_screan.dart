@@ -220,7 +220,7 @@ class _CartScreanState extends State<CartScrean> {
           ],
         ),
         child: Center(
-          child: FlatButton(
+          child: TextButton(
             onPressed: () {},
             child: Text(
               'CHECKOUT',

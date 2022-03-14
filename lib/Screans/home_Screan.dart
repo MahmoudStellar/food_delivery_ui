@@ -35,15 +35,17 @@ class _State extends State<HomeScrean> {
                 )),
             child: Row(
               children: <Widget>[
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(15.0),
-                  child: Hero(
-                    tag: restaurant.imageUrl,
-                    child: Image(
-                      height: 150.0,
-                      width: 150.0,
-                      image: AssetImage(restaurant.imageUrl),
-                      fit: BoxFit.cover,
+                Expanded(
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(15.0),
+                    child: Hero(
+                      tag: restaurant.imageUrl,
+                      child: Image(
+                        height: 150.0,
+                        width: 150.0,
+                        image: AssetImage(restaurant.imageUrl),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
